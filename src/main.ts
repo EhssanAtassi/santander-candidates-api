@@ -31,15 +31,15 @@ async function bootstrap() {
     )
     .setVersion('1.0.0')
     .setContact(
-      'Ihsan - Full Stack Developer',
-      'https://github.com/your-username',
-      'your-email@example.com',
+      'Ehsan - Full Stack Developer',
+      'https://github.com/EhssanAtassi',
+      'ihssan.alatassi@gmail.com',
     )
     .setLicense('MIT', 'https://opensource.org/licenses/MIT')
     .addTag('candidates', 'Candidate management operations')
     .addTag('upload', 'File upload operations')
     .addServer('http://localhost:3000', 'Development server')
-    .addServer('https://your-heroku-app.herokuapp.com', 'Production server')
+    .addServer('https://scib-candidates-backend-production.up.railway.app', 'Production server')
     .build();
 
   const document = SwaggerModule.createDocument(app, config);
