@@ -17,8 +17,15 @@ async function bootstrap() {
     }),
   );
   // CROS
+  // app.enableCors({
+  //   origin: process.env.FRONTEND_URL || 'http://localhost:4200',
+  //   credentials: true,
+  // });
   app.enableCors({
-    origin: process.env.FRONTEND_URL || 'http://localhost:4200',
+    origin: [
+      'http://localhost:4200',
+      'https://scib-candidates-frontend-production.up.railway.app', // Your frontend URL
+    ],
     credentials: true,
   });
   // Swagger OpenAI configuration
